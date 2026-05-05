@@ -70,7 +70,6 @@ getData(csvPath).then(loadedData => {
     
     const seed = getSeed();
     loadGameData(seed, playerData);
-    console.log('Stats:', stats);
     displayGame();
 });
 
@@ -274,7 +273,6 @@ function compareUEs(played, todays) {
     // UES are list of string separated by ;
     const playedUEs = played.split(';').map(ue => ue.trim().toLowerCase()).filter(Boolean);
     const todaysUEs = todays.split(';').map(ue => ue.trim().toLowerCase()).filter(Boolean);
-    console.log('Comparing UEs:', playedUEs, todaysUEs);
     
     const hasExactMatch =
         playedUEs.length === todaysUEs.length &&
@@ -300,7 +298,6 @@ function displayUEList(ues) {
 function compareFirstPubYear(played, todays) {
     const playedNum = parseInt(played);
     const todaysNum = parseInt(todays);
-    console.log(`Comparing numbers: played=${playedNum}, todays=${todaysNum}`);
     
     if (playedNum === todaysNum) {
         return CORRECT;
