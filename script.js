@@ -19,7 +19,7 @@ var game = {
     hintShown: false,
 };
 var playerData = JSON.parse(localStorage.getItem('imaginedlePlayerData') || '{}');
-var stats = JSON.parse(localStorage.getItem('stats') || '{}');
+var stats = JSON.parse(localStorage.getItem('imaginedleStats') || '{}');
 
 function getSeed() {
     const now = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"}));
@@ -180,7 +180,7 @@ function play(charName) {
     if (won) {
         const numTries = game.tries.length;
         stats[numTries] = (stats[numTries] || 0) + 1;
-        localStorage.setItem('stats', JSON.stringify(stats));
+        localStorage.setItem('imaginedleStats', JSON.stringify(stats));
     }
     
     playerData[seed] = { 
@@ -235,7 +235,7 @@ function cleanupOldGames(currentSeed, playerData) {
     }
     
     if (statsUpdated) {
-        localStorage.setItem('stats', JSON.stringify(stats));
+        localStorage.setItem('imaginedleStats', JSON.stringify(stats));
     }
 }
 
