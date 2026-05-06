@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    padding-bottom: 75px;
 }
 
 #logo {
@@ -152,4 +153,5 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
+    background-color: white;
 }
