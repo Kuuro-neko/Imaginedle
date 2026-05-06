@@ -1,10 +1,16 @@
 @font-face {
     font-family: "FSEX300";
-    src: url("FSEX300.ttf");
+    src: url("assets/FSEX300.ttf");
 }
 
 body {
     margin: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 * {
@@ -89,7 +95,7 @@ h1 {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('arrow_up.svg');
+    background-image: url('assets/arrow_up.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80px 40px;
