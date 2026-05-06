@@ -256,9 +256,9 @@ const emojiMap = {
     'partially_correct': '🟨',
     'wrong': '🟥',
     'lower': '🟨',
-    'much_lower': '🟨',
+    'much_lower': '🟥',
     'higher': '🟨',
-    'much_higher': '🟨'
+    'much_higher': '🟥'
 };
 
 function includes(str1, str2) {
