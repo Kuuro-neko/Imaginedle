@@ -108,7 +108,7 @@ h1 {
     transform: rotate(180deg);
 }
 
-.wrong, .much_lower, .much_higher {
+.wrong, .much_lower, .much_higher, .undefined {
     background-color: lightcoral;
 }
 
