@@ -258,7 +258,9 @@ const emojiMap = {
     'lower': '🟨',
     'much_lower': '🟥',
     'higher': '🟨',
-    'much_higher': '🟥'
+    'much_higher': '🟥',
+    undefined: '🟥',
+    'undefined': '🟥'
 };
 
 function includes(str1, str2) {
